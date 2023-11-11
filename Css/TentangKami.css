@@ -14,7 +14,7 @@ body {
 .container {
     height: 100%;
     width: 100%;
-    background-image: url("/IMKProject/img/luke-van-zyl-koH7IVuwRLw-unsplash.jpg");
+    background-image: url("../img/luke-van-zyl-koH7IVuwRLw-unsplash.jpg");
     background-size: cover;
     background-position: center bottom;
     z-index: 2;

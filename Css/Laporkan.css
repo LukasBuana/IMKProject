@@ -9,7 +9,7 @@ body {
     width: 100%;
     height: 900px;
     margin: 0;
-    background-image: url('/IMKProject/img/brandon-griggs-wR11KBaB86U-unsplash\(1\).jpg');
+    background-image: url('../img/brandon-griggs-wR11KBaB86U-unsplash\(1\).jpg ');
     background-size: cover;
     background-position: center bottom;
     overflow-y: auto;
