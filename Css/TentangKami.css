@@ -111,7 +111,126 @@ input {
 }
 
 
-@media(max-width: 900px) {
+@media(max-width: 1000px) {
+    header {
+        padding: 10px 20px;
+    }
+
+    header nav {
+        position: absolute;
+        width: 100%;
+        top: 66px;
+        left: 0;
+        background: #338D7D;
+        display: none;
+    }
+
+    header.active nav {
+        display: inline;
+    }
+
+    header nav ul li {
+        width: 100%;
+    }
+
+    header nav ul li ul {
+        position: relative;
+        width: 100%;
+        left: 0;
+    }
+
+    header ul li ul li ul {
+        top: 0;
+        left: 0;
+    }
+
+    nav ul li {
+        display: block;
+        width: 100%;
+    }
+
+    nav ul ul li {
+        display: block;
+        width: 100%;
+    }
+
+    nav ul ul {
+        float: none;
+        border-top: none;
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        display: none;
+    }
+
+    header nav ul li:hover ul {
+        display: none;
+    }
+
+    nav ul li a:hover {
+        box-shadow: none;
+    }
+
+    .show {
+        display: block;
+        color: #fff;
+        font-size: 20px;
+        padding: 25px 30px;
+        cursor: pointer;
+
+
+    }
+
+    .show:hover {
+        background: #064c3f;
+    }
+
+    .show+a {
+        display: none;
+    }
+
+    [id^=btn]:checked+ul {
+        display: block;
+    }
+
+
+    .menutoggle {
+        position: relative;
+        width: 40px;
+        height: 50px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menutoggle::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background: #fff;
+        transform: translateY(-12px);
+        box-shadow: 0 12px #fff;
+    }
+
+    .menutoggle::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background: #fff;
+        transform: translateY(12px);
+    }
+
+    header.active .menutoggle::before {
+        transform: rotate(45deg);
+        box-shadow: 0 0 #fff;
+    }
+
+    header.active .menutoggle::after {
+        transform: rotate(315deg);
+    }
 
     html,
     body {
@@ -249,7 +368,7 @@ input {
     font-family: Kumar One;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
     .header1 {
         left: 15%;
     }

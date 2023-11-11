@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Obrolan</title>
     <link rel="stylesheet" href="../Css/DecorationObrolan.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../JS/Obrolan.js" defer></script>
 </head>
 
 <body>
@@ -57,6 +59,7 @@
         </div>
 
 
+
     </header>
     <script>
         let menutoggle = document.querySelector('.menutoggle');
@@ -65,6 +68,29 @@
             header.classList.toggle('active')
         }
     </script>
+
+    <div class="container">
+        <div class="textbox">
+            <div class="chatbot">
+                <div class="bapakkos">
+                    <h1>Bapak Kos</h1>
+                </div>
+                <ul class="chatbox">
+                    <li class="chat-incoming">
+                        <p>Halo 👋 <br>Ada yang bisa saya bantu?</p>
+                    </li>
+                    <li class="chat-coming">
+                        <p>saya mau ngapain ya hehehehehehehehe</p>
+                    </li>
+
+                </ul>
+                <div class="chat-input">
+                    <textarea placeholder="Masukkan pesan..." required></textarea>
+                    <span class="fa fa-send-o" style="font-size:36px"></span>
+                </div>
+
+            </div>
+        </div>
 </body>
 
 </html>
