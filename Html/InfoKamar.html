@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Css/InfoKamar.css">
+    <link href='https://fonts.googleapis.com/css?family=Kumar One' rel='stylesheet'>
+    <title>Informasi Kamar</title>
+</head>
+
+<body>
+    <header>
+        <div class="menutoggle"> </div>
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li>
+                    <label for="btn1" class="show">Profil +</label>
+                    <a href="">Profil</a>
+                    <input type="checkbox" id="btn1">
+                    <ul>
+                        <li><a href="Obrolan.html">Obrolan</a></li>
+                        <li><a href="BayarKos.html">Bayar Kos</a></li>
+                        <li><a href="Laporkan.html">Laporkan</a></li>
+                        <li><a href="KonfirmasiPembayaran.html">Konfirmasi Pembayaran </a></li>
+                    </ul>
+                </li>
+                <li>
+                    <label for="btn2" class="show">Informasi +</label>
+                    <a href="">Informasi</a>
+                    <input type="checkbox" id="btn2">
+                    <ul>
+                        <li><a href="InfoKamar.html">Kos</a></li>
+                        <li><a href="InfoPenghuni.html">Penghuni Kos</a></li>
+                        <li>
+                            <label for="btn3" class="show">Laporan +</label>
+
+                            <a href="">Laporan</a>
+                            <input type="checkbox" id="btn3">
+
+                            <ul>
+                                <li><a href="LaporanKeuangan.html">Laporan Keuangan</a></li>
+                                <li><a href="HistoriKeuangan.html">Histori Keuangan</a></li>
+                                <li><a href="KinerjaProperti.html">Kinerja Properti</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="TentangKami.html">Tentang Kami </a></li>
+            </ul>
+        </nav>
+        <div class="logout" onclick="window.location.href='SignUp.html'">
+            <img src="https://cdn-icons-png.flaticon.com/512/4263/4263209.png" alt="">
+        </div>
+    </header>
+    <script>
+        let menutoggle = document.querySelector('.menutoggle');
+        let header = document.querySelector('header')
+        menutoggle.onclick = function () {
+            header.classList.toggle('active')
+        }
+    </script>
+    <div class="container">
+        <h1>Info Kamar</h1>
+        <div class="container-in">
+            <div class="card">
+                <div class="card-img img-1"></div>
+                <h2>Kamar A1</h2>
+                <h2>Kosong</h2>
+                <h1>500.000</h1>
+            </div>
+            <div class="card">
+                <div class="card-img img-2"></div>
+                <h2>Kamar A2</h2>
+                <h2>Kosong</h2>
+                <h1>900.000</h1>
+            </div>
+            <div class="card">
+                <div class="card-img img-4"></div>
+                <h2>Kamar A3</h2>
+                <h2>Terisi</h2>
+                <h1>1.200.000</h1>
+            </div>
+            <div class="card">
+                <div class="card-img img-3"></div>
+                <h2>Kamar A4</h2>
+                <h2>Kosong</h2>
+                <h1>1.430.000</h1>
+            </div>
+            <div class="card">
+                <div class="card-img img-2"></div>
+                <h2>Kamar A5</h2>
+                <h2>Terisi</h2>
+                <h1>500.000</h1>
+            </div>
+            <div class="card">
+                <div class="card-img img-3"></div>
+                <h2>Kamar A6</h2>
+                <h2>Kosong</h2>
+                <h1>900.000</h1>
+            </div>
+            <div class="card">
+                <div class="card-img img-4"></div>
+                <h2>Kamar A7</h2>
+                <h2>Terisi</h2>
+                <h1>1.200.000</h1>
+            </div>
+            <div class="card">
+                <div class="card-img img-1"></div>
+                <h2>Kamar A8</h2>
+                <h2>Terisi</h2>
+                <h1>1.430.000</h1>
+            </div>
+            <div class="card">
+                <div class="card-img img-2"></div>
+                <h2>Kamar B1</h2>
+                <h2>Terisi</h2>
+                <h1>500.000</h1>
+            </div>
+            <div class="card">
+                <div class="card-img img-4"></div>
+                <h2>Kamar B2</h2>
+                <h2>Kosong</h2>
+                <h1>900.000</h1>
+            </div>
+            <div class="card">
+                <div class="card-img img-1"></div>
+                <h2>Kamar B3</h2>
+                <h2>Terisi</h2>
+                <h1>1.200.000</h1>
+            </div>
+            <div class="card">
+                <div class="card-img img-2"></div>
+                <h2>Kamar B4</h2>
+                <h2>Kosong</h2>
+                <h1>1.430.000</h1>
+            </div>
+            <div class="card">
+                <div class="card-img img-1"></div>
+                <h2>Kamar B5</h2>
+                <h2>Terisi</h2>
+                <h1>500.000</h1>
+            </div>
+            <div class="card">
+                <div class="card-img img-3"></div>
+                <h2>Kamar B6</h2>
+                <h2>Kosong</h2>
+                <h1>900.000</h1>
+            </div>
+            <div class="card">
+                <div class="card-img img-4"></div>
+                <h2>Kamar C1</h2>
+                <h2>Terisi</h2>
+                <h1>1.200.000</h1>
+            </div>
+            <div class="card">
+                <div class="card-img img-2"></div>
+                <h2>Kamar C1</h2>
+                <h2>Kosong</h2>
+                <h1>1.430.000</h1>
+            </div>
+            <div class="card">
+                <div class="card-img img-1"></div>
+                <h2>Kamar C2</h2>
+                <h2>Terisi</h2>
+                <h1>500.000</h1>
+            </div>
+            <div class="card">
+                <div class="card-img img-3"></div>
+                <h2>Kamar C3</h2>
+                <h2>Kosong</h2>
+                <h1>900.000</h1>
+            </div>
+            <div class="card">
+                <div class="card-img img-2"></div>
+                <h2>Kamar C4</h2>
+                <h2>Terisi</h2>
+                <h1>1.200.000</h1>
+            </div>
+            <div class="card">
+                <div class="card-img img-4"></div>
+                <h2>Kamar C5</h2>
+                <h2>Terisi</h2>
+                <h1>1.430.000</h1>
+            </div>
+            <div class="card">
+                <div class="card-img img-1"></div>
+                <h2>Kamar C6</h2>
+                <h2>Kosong</h2>
+                <h1>500.000</h1>
+            </div>
+            <div class="card">
+                <div class="card-img img-2"></div>
+                <h2>Kamar C7</h2>
+                <h2>Kosong</h2>
+                <h1>900.000</h1>
+            </div>
+            <div class="card">
+                <div class="card-img img-3"></div>
+                <h2>Kamar C8</h2>
+                <h2>Terisi</h2>
+                <h1>1.200.000</h1>
+            </div>
+            <div class="card">
+                <div class="card-img img-2"></div>
+                <h2>Kamar C9</h2>
+                <h2>Kosong</h2>
+                <h1>1.430.000</h1>
+            </div>
+        </div>
+    </div>
+    <script>
+        var dynamicTextElements = document.querySelectorAll(".card h2");
+
+        dynamicTextElements.forEach(function (element) {
+            var text = element.textContent || element.innerText;
+
+            if (text == 'Terisi') {
+                element.style.color = "red";
+            } else if (text == 'Kosong') {
+                element.style.color = "blue";
+            } else {
+                element.style.color = "#338D7D";
+            }
+        });
+    </script>
+</body>
+
+</html>
