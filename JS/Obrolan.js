@@ -32,7 +32,7 @@ const handleChat = () => {
             chatbox.appendChild(createChatLi("Baik, pembayaran dapat melalui menu bayarkos mas", "chat-incoming"));
         }
         else if (userMessage.toLowerCase().includes("?")) {
-            chatbox.appendChild(createChatLi("Nanti akan diinforkan lebih lanjut ya", "chat-incoming"));
+            chatbox.appendChild(createChatLi("Nanti akan diinfokan lebih lanjut ya", "chat-incoming"));
         }
         else if (userMessage.toLowerCase().includes("halo") || (userMessage.toLowerCase().includes("hai"))) {
             chatbox.appendChild(createChatLi("Halo mas", "chat-incoming"));

@@ -4,7 +4,8 @@
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     height: 100%;
     margin: 0;
     overflow: hidden;
@@ -17,8 +18,9 @@ html, body {
     background-size: cover;
     background-position: center bottom;
     z-index: 2;
-   
+
 }
+
 
 header {
     position: absolute;
@@ -28,17 +30,25 @@ header {
     padding: 0 100px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    /* Added this line */
     z-index: 1;
+
 }
+
+
 
 header ul {
     position: relative;
+
 }
 
 header ul li {
     position: relative;
     list-style: none;
-    float: left;
+    display: inline-block;
+    /* Changed from float: left to display: inline-block */
+
 }
 
 header ul li a {
@@ -48,6 +58,7 @@ header ul li a {
     text-decoration: none;
     display: flex;
     justify-content: space-between;
+
 }
 
 header ul li a:hover {
@@ -85,13 +96,29 @@ input {
     display: none;
 }
 
+
+.logout {
+    width: 40px;
+    height: 40px;
+    margin-left: 400px;
+    cursor: pointer;
+}
+
+.logout img {
+    float: right;
+    width: 100%;
+    height: 100%;
+
+}
+
 @media(max-width: 900px) {
 
-    html, body {
+    html,
+    body {
         height: 100%;
         margin: 0;
     }
-    
+
     header {
         padding: 10px 20px;
     }
@@ -227,7 +254,7 @@ input {
     border-radius: 40px;
     display: flex;
     justify-content: center;
-   
+
 }
 
 .header2 {
@@ -246,8 +273,8 @@ input {
     border-radius: 40px;
     display: flex;
     justify-content: center;
- 
-   
+
+
 }
 
 .header3 {
@@ -268,8 +295,8 @@ input {
     justify-content: center;
     align-items: center;
     text-align: center;
- 
-   
+
+
 }
 
 .textbox {
@@ -287,6 +314,7 @@ input {
     left: 7.5%;
     padding: 20px;
 }
+
 .textbox2 {
     color: #338D7D;
     font-size: 24px;
@@ -330,6 +358,7 @@ input {
     font-weight: bold;
     font-size: 29px;
 }
+
 .textbox-in1 {
     overflow-y: auto;
     scrollbar-color: transparent;
@@ -341,8 +370,9 @@ input {
     position: absolute;
     top: 30%;
     left: 24%;
-    
+
 }
+
 .textbox-in2 {
     overflow-y: auto;
     scrollbar-color: transparent;
@@ -355,7 +385,7 @@ input {
     top: 8%;
     left: 3%;
     font-size: 25px;
-    
+
 }
 
 .Fasilitas {
@@ -373,7 +403,7 @@ input {
     font-family: sans-serif;
     font-weight: bold;
     text-align: right;
-    
+
 }
 
 
@@ -407,7 +437,7 @@ input {
     left: 1200px;
     bottom: 80px;
     right: 0px;
-    
+
 }
 
 .Listrik img {
@@ -418,7 +448,7 @@ input {
     left: 1200px;
     bottom: 180px;
     right: 170px;
-    
+
 }
 
 .Kasur img {
@@ -429,7 +459,7 @@ input {
     left: 1200px;
     bottom: 180px;
     right: 170px;
-   
+
 }
 
 .Lemari img {
@@ -440,5 +470,5 @@ input {
     left: 1200px;
     bottom: 180px;
     right: 170px;
-   
+
 }
