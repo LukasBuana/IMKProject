@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Css/KinerjaProperti.css">
+    <link href='https://fonts.googleapis.com/css?family=Kumar One' rel='stylesheet'>
+    <title>Kinerja Properti</title>
+</head>
+
+<body>
+    <header>
+        <div class="menutoggle"> </div>
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li>
+                    <label for="btn1" class="show">Profil +</label>
+                    <a href="">Profil</a>
+                    <input type="checkbox" id="btn1">
+                    <ul>
+                        <li><a href="Obrolan.html">Obrolan</a></li>
+                        <li><a href="BayarKos.html">Bayar Kos</a></li>
+                        <li><a href="Laporkan.html">Laporkan</a></li>
+                        <li><a href="KonfirmasiPembayaran.html">Konfirmasi Pembayaran </a></li>
+                    </ul>
+                </li>
+                <li>
+                    <label for="btn2" class="show">Informasi +</label>
+                    <a href="">Informasi</a>
+                    <input type="checkbox" id="btn2">
+                    <ul>
+                        <li><a href="InfoKamar.html">Kos</a></li>
+                        <li><a href="InfoPenghuni.html">Penghuni Kos</a></li>
+                        <li>
+                            <label for="btn3" class="show">Laporan +</label>
+
+                            <a href="">Laporan</a>
+                            <input type="checkbox" id="btn3">
+
+                            <ul>
+                                <li><a href="LaporanKeuangan.html">Laporan Keuangan</a></li>
+                                <li><a href="HistoriKeuangan.html">Histori Keuangan</a></li>
+                                <li><a href="KinerjaProperti.html">Kinerja Properti</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="TentangKami.html">Tentang Kami </a></li>
+            </ul>
+        </nav>
+        <div class="logout" onclick="window.location.href='SignUp.html'">
+            <img src="https://cdn-icons-png.flaticon.com/512/4263/4263209.png" alt="">
+        </div>
+    </header>
+    <script>
+        let menutoggle = document.querySelector('.menutoggle');
+        let header = document.querySelector('header')
+        menutoggle.onclick = function () {
+            header.classList.toggle('active')
+        }
+    </script>
+    <div class="container">
+        <h1>Kinerja Properti</h1>
+        <div class="box">
+            <h1>Kamar Terisi</h1>
+            <p>22/24</p>
+            <h1>Biaya Perbaikan</h1>
+            <p>2.800.000</p>
+            <h1>Kerusakan Fasilitas</h1>
+            <div class="scrollable">
+                <h3>Kamar A3</h3>
+                <p>Tembok Lembab</p>
+                <h3>Kamar B1</h3>
+                <p>Cermin Pecah</p>
+                <h3>Kamar A2</h3>
+                <p>Tirai Lepas</p>
+            </div>
+            <h1>Pelanggan Belum Bayar</h1>
+            <div class="scrollable">
+                <h3>Kamar A5</h3>
+                <p>Doni Sucipto</p>
+                <h3>Kamar B5</h3>
+                <p>Edi Rahmat</p>
+                <h3>Kamar C1</h3>
+                <p>Hadi Gunawan</p>
+                <h3>Kamar C5</h3>
+                <p>Lukman Antono</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
