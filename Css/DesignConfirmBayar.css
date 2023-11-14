@@ -4,8 +4,7 @@
     box-sizing: border-box;
 }
 
-html,
-body {
+html, body {
     height: 100%;
     margin: 0;
     overflow: hidden;
@@ -18,7 +17,7 @@ body {
     background-size: cover;
     background-position: center bottom;
     z-index: 2;
-
+   
 }
 
 header {
@@ -29,25 +28,17 @@ header {
     padding: 0 100px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    /* Added this line */
     z-index: 1;
-
 }
-
-
 
 header ul {
     position: relative;
-
 }
 
 header ul li {
     position: relative;
     list-style: none;
-    display: inline-block;
-    /* Changed from float: left to display: inline-block */
-
+    float: left;
 }
 
 header ul li a {
@@ -57,7 +48,6 @@ header ul li a {
     text-decoration: none;
     display: flex;
     justify-content: space-between;
-
 }
 
 header ul li a:hover {
@@ -95,29 +85,13 @@ input {
     display: none;
 }
 
-
-.logout {
-    width: 40px;
-    height: 40px;
-    margin-left: 400px;
-    cursor: pointer;
-}
-
-.logout img {
-    float: right;
-    width: 100%;
-    height: 100%;
-
-}
-
 @media(max-width: 900px) {
 
-    html,
-    body {
+    html, body {
         height: 100%;
         margin: 0;
     }
-
+    
     header {
         padding: 10px 20px;
     }
@@ -246,7 +220,6 @@ input {
     left: 5%;
     font-family: Kumar One;
 }
-
 .header2 {
     color: black;
     font-size: 15px;
@@ -272,7 +245,6 @@ input {
     left: 7.5%;
     padding: 20px;
 }
-
 .textbox2 {
     color: #338D7D;
     font-size: 24px;
@@ -288,7 +260,6 @@ input {
     left: 7.5%;
     padding: 20px;
 }
-
 .textbox3 {
     color: #338D7D;
     font-size: 24px;
@@ -304,7 +275,6 @@ input {
     left: 7.5%;
     padding: 20px;
 }
-
 .textbox4 {
     color: #338D7D;
     font-size: 24px;
@@ -343,7 +313,6 @@ input {
     font-family: Fauna One;
     display: block;
 }
-
 .Konfirmasi {
     position: fixed;
     bottom: 50px;
@@ -358,8 +327,7 @@ input {
     justify-content: center;
     align-items: center;
     font-size: 35px;
-    margin: 0;
-    /* Merubah margin agar sesuai dengan kebutuhan */
+    margin: 0; 
 }
 
 .gambarfile img {
@@ -396,3 +364,5 @@ input {
     top: 10%;
     left: 5%;
 } */
+
+

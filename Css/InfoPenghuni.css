@@ -321,6 +321,17 @@ input {
     max-width: 80%;
 }
 
+.card h3 {
+    font-size: 14px;
+    position: relative;
+    margin-left: 10%;
+    color: #060707;
+    font-family: sans-serif;
+    text-align: justify;
+    font-weight: 100;
+    max-width: 80%; 
+}
+
 .card-img {
     height: 50%;
     margin-bottom: 20px;
@@ -336,17 +347,82 @@ input {
 }
 
 .img-1 {
-    background-image: url(/img/penghuni-placeholder.jpg);
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/9/91/Lelaki_dengan_gitar_kecil.jpg');
 }
 
 .img-2 {
-    background-image: url(/img/penghuni-placeholder.jpg);
+    background-image: url('https://media.glamourmagazine.co.uk/photos/6138939de2e190b1f7b261b2/16:9/w_2560%2Cc_limit/gettyimages-1153551851_sf.jpg');
 }
 
 .img-3 {
-    background-image: url(/img/penghuni-placeholder.jpg);
+    background-image: url('https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/blt12dbddde5342ce4c/648866ff21a8556da61fa167/GOAL_-_Blank_WEB_-_Facebook_-_2023-06-13T135350.847.png?auto=webp&format=pjpg&width=3840&quality=60/penghuni-placeholder.jpg');
 }
 
 .img-4 {
-    background-image: url(/img/penghuni-placeholder.jpg);
+    background-image: url('https://media.suara.com/pictures/970x544/2021/03/20/28688-teuku-wisnu.jpg');
 }
+
+.img-5 {
+    background-image: url('https://asset-2.tstatic.net/tribunnewswiki/foto/bank/images/Donny-Michael-421.jpg');
+}
+
+.img-6 {
+    background-image: url('https://img.okezone.com/content/2023/07/31/33/2855168/rony-idol-ungkap-keinginan-berduet-dengan-lyodra-dan-dewa-19-1FWLjQY4AE.jpg');
+}
+
+.img-7 {
+    background-image: url('https://awsimages.detik.net.id/community/media/visual/2021/01/18/ariel-noah_43.png?w=1200');
+}
+
+.img-8 {
+    background-image: url('https://blue.kumparan.com/image/upload/fl_progressive,fl_lossy,c_fill,q_auto:best,w_640/v1524825502/hjkmmemcdzvhem4zdrlx.jpg');
+}
+
+.img-9 {
+    background-image: url('https://awsimages.detik.net.id/community/media/visual/2016/09/21/1b4deba3-e842-4b99-92fb-717e711d01ca.jpg?w=600&q=90');
+}
+
+.img-10 {
+    background-image: url('https://asset.kompas.com/crops/aepSC53hn1SoPs-SfhCr_fY-MX0=/18x11:700x465/750x500/data/photo/2019/08/15/5d54c34d9e925.png');
+}
+
+.img-11 {
+    background-image: url('https://asset-2.tstatic.net/batam/foto/bank/images/adipati-dolken_20180405_072034.jpg');
+}
+
+.img-12 {
+    background-image: url('https://asset-a.grid.id/crop/0x0:0x0/x/photo/2018/12/28/277541197.jpg');
+}
+
+.img-13 {
+    background-image: url(/img/20221030_010522.jpg);
+}
+
+.img-14 {
+    background-image: url('https://shopee.co.id/inspirasi-shopee/wp-content/uploads/2018/11/Rizky-Febrian-2-1024x640.jpg');
+}
+
+.img-15{
+    background-image: url(/img/HAIKALPHOTO.jpg);
+}
+
+.img-16 {
+    background-image: url('https://www.pegipegi.com/travel/wp-content/uploads/2017/08/http-2F2Fhypebeast.com2Fimage2F20172F052Frich-chigga-internet-meme-interview-video-0-450x270.jpg');
+}
+
+.img-17 {
+    background-image: url('https://www.goodnewsfromindonesia.id/uploads/post/large-wregas-bhanuteja-1-1024x677-f1bcfe558357658bb02001b058576fdf.jpg');
+}
+.img-18 {
+    background-image: url(/img/20221030_010649.jpg);
+}
+
+.img-19 {
+    background-image: url('https://www.pikiranmerdeka.co/wp-content/uploads/2020/12/WhatsApp-Image-2020-12-13-at-01.10.51.jpeg');
+}
+
+.img-20{
+    
+    background-image: url(/img/Screenshot\ 2023-11-13\ 233141.png);
+}
+
