@@ -67,11 +67,127 @@
     </script>
     <div class="container">
         <h1 class="header1">Histori Keuangan</h1>
-        <div class="textbox">
-            <div class="textbox-in">tes tes<br><br>
-                isi apa guis</div>
+        <h2 class="h2">Silakan Pilih Bulan dan Tahun yang Ingin Ditampilkan</h2>
+        <div class="select">
+            <select name="format" id="format1">
+              <option selected disabled>Pilih Tahun</option>
+              <option value="1">2019</option>
+              <option value="2">2020</option>
+              <option value="3">2021</option>
+              <option value="4">2022</option>
+              <option value="5">2023</option>
+           </select>
         </div>
+
+        <div class="select2">
+            <select name="format" id="format2">
+              <option selected disabled>Pilih Bulan</option>
+              <option value="Jan">Januari</option>
+              <option value="Feb">Februari</option>
+              <option value="Mar">Maret</option>
+              <option value="fb2">April</option>
+              <option value="Mei">Mei</option>
+              <option value="Jun">Juni</option>
+              <option value="Jul">Juli</option>
+              <option value="Ag">Agustus</option>
+              <option value="Sep">September</option>
+              <option value="Okt">Oktober</option>
+              <option value="Nov">November</option>
+              <option value="Des">Desember</option>
+
+           </select>
+        </div>
+
+        <div class="textbox">
+            <table id="tabel">
+                <thead>
+                    <tr>
+                        <th>No Transaksi</th>
+                        <th>Nama Kategori</th>
+                        <th>Pemasukan</th>
+                        <th>Pengeluaran</th>
+                        <th>Jenis Pembayaran</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>10091</td>
+                        <td>Pembayaran Kos Kamar B2</td>
+                        <td>Rp1.500.000</td>
+                        <td>Rp0</td>
+                        <td>Transfer</td>
+                    </tr>
+                    <tr>
+                        <td>14590</td>
+                        <td>Pembayaran Kos Kamar C1</td>
+                        <td>Rp1.350.000</td>
+                        <td>Rp0</td>
+                        <td>Transfer</td>
+                    </tr>
+                    <tr>
+                        <td>33344</td>
+                        <td>Perbaikan Kos Kamar A3</td>
+                        <td>Rp0</td>
+                        <td>Rp500.000</td>
+                        <td>Tunai</td>
+                    </tr>
+                    <tr>
+                        <td>12041</td>
+                        <td>Pembayaran Listrik dan Air</td>
+                        <td>Rp0</td>
+                        <td>Rp3.000.000</td>
+                        <td>Transfer</td>
+                    </tr>
+                    <tr>
+                        <td>19053</td>
+                        <td>Pemasukan Dari Donatur</td>
+                        <td>Rp4.500.000</td>
+                        <td>Rp0</td>
+                        <td>Tunai</td>
+                    </tr>
+                    <tr>
+                        <td>20012</td>
+                        <td>Pembayaran Staf</td>
+                        <td>Rp0</td>
+                        <td>Rp3.000.000</td>
+                        <td>Tunai</td>
+                    </tr>
+                    <tr>
+                        <td>24076</td>
+                        <td>Pemasukan Laundry JayaCitra</td>
+                        <td>Rp2.840.000</td>
+                        <td>Rp0</td>
+                        <td>Transfer</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+    
     </div>
+    <script defer>
+        document.addEventListener('DOMContentLoaded', function () {
+            var selectedOption1 = document.getElementById("format1");
+            var selectedOption2 = document.getElementById("format2");
+            var tabel = document.getElementById("tabel");
+    
+            function updateTable() {
+                var selectedValue1 = selectedOption1.options[selectedOption1.selectedIndex].value;
+                var selectedValue2 = selectedOption2.options[selectedOption2.selectedIndex].value;
+    
+                if (selectedValue1 !== "Pilih tahun" && selectedValue2 !== "Pilih Bulan") {
+                    tabel.style.display = "table";
+                } else {
+                    tabel.style.display = "none";
+                }
+            }
+    
+            updateTable();
+    
+            selectedOption1.addEventListener('change', updateTable);
+            selectedOption2.addEventListener('change', updateTable);
+        });
+    </script>
 
 </body>
 
