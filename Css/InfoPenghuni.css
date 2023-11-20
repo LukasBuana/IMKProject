@@ -229,7 +229,6 @@ input {
 }
 
 .container {
-    height: 900px;
     width: 80%;
     position: relative;
     left: 10%;
@@ -248,7 +247,6 @@ input {
 
 .container-in {
     display: flex;
-    overflow: scroll;
     flex-wrap: wrap;
     justify-content: left;
 }
@@ -266,7 +264,6 @@ input {
 }
 
 .container-in {
-    overflow-y: auto;
     scrollbar-color: transparent;
     scrollbar-width: thin;
     scroll-margin-block-end: 10px;
@@ -329,7 +326,7 @@ input {
     font-family: sans-serif;
     text-align: justify;
     font-weight: 100;
-    max-width: 80%; 
+    max-width: 80%;
 }
 
 .card-img {
@@ -395,15 +392,15 @@ input {
 }
 
 .img-13 {
-    background-image: url(/img/20221030_010522.jpg);
+    background-image: url(../img/20221030_010522.jpg);
 }
 
 .img-14 {
     background-image: url('https://shopee.co.id/inspirasi-shopee/wp-content/uploads/2018/11/Rizky-Febrian-2-1024x640.jpg');
 }
 
-.img-15{
-    background-image: url(/img/HAIKALPHOTO.jpg);
+.img-15 {
+    background-image: url(../img/HAIKALPHOTO.jpg);
 }
 
 .img-16 {
@@ -413,16 +410,16 @@ input {
 .img-17 {
     background-image: url('https://www.goodnewsfromindonesia.id/uploads/post/large-wregas-bhanuteja-1-1024x677-f1bcfe558357658bb02001b058576fdf.jpg');
 }
+
 .img-18 {
-    background-image: url(/img/20221030_010649.jpg);
+    background-image: url(../img/20221030_010649.jpg);
 }
 
 .img-19 {
     background-image: url('https://www.pikiranmerdeka.co/wp-content/uploads/2020/12/WhatsApp-Image-2020-12-13-at-01.10.51.jpeg');
 }
 
-.img-20{
-    
-    background-image: url(/img/Screenshot\ 2023-11-13\ 233141.png);
-}
+.img-20 {
 
+    background-image: url(../img/Screenshot\ 2023-11-13\ 233141.png);
+}
