@@ -425,9 +425,30 @@ input {
 }
 
 .tambah-penghuni {
+    display:inline-flex;
+    width: auto;
+    padding: 15px;
     background-color: #338D7D;
     border-radius: 50px;
-    position: absolute;
+    position: fixed;
     bottom: 50px;
     right: 50px;
+    z-index: 1;
+    align-items: center;
+}
+
+.tambah-penghuni:hover {
+    background-color: #064c3f;
+    cursor: default;
+}
+
+.tambah-penghuni p {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.tambah-penghuni img {
+    width: 30px;
+    height: auto;
+    margin-right: 10px;
 }
