@@ -20,22 +20,38 @@
         <h3 class="kostext">kos nyaman hidup tenang</h3>
 
         <main class="content">
-            <div class="input-box">
-                <input class="email" type="text" name="full-name" placeholder="Email" required>
-            </div>
+            <form class="form" onsubmit="return redirectToHome()">
 
-            <div class="input-box">
-                <input id="password" class="email" type="password" name="full-name" placeholder="Kata Sandi" required>
-                <img id="eye"
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4Mbqdihqs9HPlTYkgCqP8-afZaSQo-c1KsA&usqp=CAU"
-                    alt="">
-            </div>
+                <div class="input-box">
+                    <input class="email" type="text" name="full-name" placeholder="Email" required>
+                </div>
 
-            <div class="daftar" onclick="window.location.href='Home.html'">
-                <p class="buttondaftar">
-                    Masuk
-                </p>
-            </div>
+                <div class="input-box">
+                    <input id="password" class="email" type="password" name="full-name" placeholder="Kata Sandi"
+                        required>
+                    <img id="eye"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4Mbqdihqs9HPlTYkgCqP8-afZaSQo-c1KsA&usqp=CAU"
+                        alt="">
+                </div>
+                <button class="daftar">
+                    <p class="buttondaftar">
+                        Masuk
+                    </p>
+                </button>
+
+            </form>
+
+            <script>
+                var userEmail; // Variabel global untuk menyimpan email
+
+                function redirectToHome() {
+                    userEmail = document.querySelector('input[name="full-name"]').value;
+                    window.location.href = 'Home.html';
+                    return false; // Prevent the default form submission
+                }
+            </script>
+
+
             <p class="keteranganmelalui">Masuk melalui</p>
 
             <div class="facebook">

@@ -22,7 +22,7 @@
 
 .container {
     width: 500px;
-    height: 990px;
+    height: 100%;
     background-color: #FFFFFF;
     margin: 20px auto;
     margin-top: 0px;
@@ -72,7 +72,9 @@
 }
 
 
-
+.form {
+    background-color: #FFFFFF;
+}
 
 
 .input-box img {
@@ -140,7 +142,7 @@
     background-color: blue;
     margin: 30px auto;
     width: 60%;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
     cursor: pointer;
     border: 1px solid blue;
     border-radius: 5px;

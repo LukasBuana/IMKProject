@@ -40,9 +40,13 @@
                             <input type="checkbox" id="btn3">
 
                             <ul>
-                                <li><a href="LaporanKeuangan.html">Laporan Keuangan</a></li>
-                                <li><a href="HistoriKeuangan.html">Histori Keuangan</a></li>
-                                <li><a href="KinerjaProperti.html">Kinerja Properti</a></li>
+                                <li><a href="LaporanKeuangan.html" onclick="return checkAccess()">Laporan Keuangan</a>
+                                </li>
+                                <li><a href="HistoriKeuangan.html">Histori Keuangan</a>
+
+                                </li>
+                                <li><a href="KinerjaProperti.html" onclick="return checkAccess()">Kinerja Properti</a>
+                                </li>
                             </ul>
                         </li>
                     </ul>
@@ -64,38 +68,48 @@
         menutoggle.onclick = function () {
             header.classList.toggle('active')
         }
+
+        function checkAccess() {
+            var userEmail = prompt('Masukkan kata sandi Admin:'); // Ganti ini dengan metode autentikasi yang lebih aman
+            if (userEmail === 'jaya999') {
+                return true; // Izinkan akses jika email adalah admin
+            } else {
+                alert('Anda tidak memiliki izin untuk mengakses halaman ini.');
+                return false; // Batalkan akses jika bukan admin
+            }
+        }
     </script>
     <div class="container">
         <h1 class="header1">Histori Keuangan</h1>
         <h2 class="h2">Silakan Pilih Bulan dan Tahun yang Ingin Ditampilkan</h2>
         <div class="select">
             <select name="format" id="format1">
-              <option selected disabled>Pilih Tahun</option>
-              <option value="1">2019</option>
-              <option value="2">2020</option>
-              <option value="3">2021</option>
-              <option value="4">2022</option>
-              <option value="5">2023</option>
-           </select>
+                <option selected disabled>Pilih Tahun</option>
+                <option value="1">2019</option>
+                <option value="2">2020</option>
+                <option value="3">2021</option>
+                <option value="4">2022</option>
+                <option value="5">2023</option>
+            </select>
         </div>
 
         <div class="select2">
             <select name="format" id="format2">
-              <option selected disabled>Pilih Bulan</option>
-              <option value="Jan">Januari</option>
-              <option value="Feb">Februari</option>
-              <option value="Mar">Maret</option>
-              <option value="fb2">April</option>
-              <option value="Mei">Mei</option>
-              <option value="Jun">Juni</option>
-              <option value="Jul">Juli</option>
-              <option value="Ag">Agustus</option>
-              <option value="Sep">September</option>
-              <option value="Okt">Oktober</option>
-              <option value="Nov">November</option>
-              <option value="Des">Desember</option>
+                <option selected disabled>Pilih Bulan</option>
+                <option value="Jan">Januari</option>
+                <option value="Feb">Februari</option>
+                <option value="Mar">Maret</option>
+                <option value="fb2">April</option>
+                <option value="Mei">Mei</option>
+                <option value="Jun">Juni</option>
+                <option value="Jul">Juli</option>
+                <option value="Ag">Agustus</option>
+                <option value="Sep">September</option>
+                <option value="Okt">Oktober</option>
+                <option value="Nov">November</option>
+                <option value="Des">Desember</option>
 
-           </select>
+            </select>
         </div>
 
         <div class="textbox">
@@ -162,28 +176,28 @@
                 </tbody>
             </table>
         </div>
-        
-    
+
+
     </div>
     <script defer>
         document.addEventListener('DOMContentLoaded', function () {
             var selectedOption1 = document.getElementById("format1");
             var selectedOption2 = document.getElementById("format2");
             var tabel = document.getElementById("tabel");
-    
+
             function updateTable() {
                 var selectedValue1 = selectedOption1.options[selectedOption1.selectedIndex].value;
                 var selectedValue2 = selectedOption2.options[selectedOption2.selectedIndex].value;
-    
+
                 if (selectedValue1 !== "Pilih tahun" && selectedValue2 !== "Pilih Bulan") {
                     tabel.style.display = "table";
                 } else {
                     tabel.style.display = "none";
                 }
             }
-    
+
             updateTable();
-    
+
             selectedOption1.addEventListener('change', updateTable);
             selectedOption2.addEventListener('change', updateTable);
         });
