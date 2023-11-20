@@ -132,12 +132,32 @@ input {
     margin-left: 0px;
 }
 
+.gambar {
+    position: relative;
+    overflow: hidden;
+}
+
+.gambar:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(50, 50, 50, 0.6);
+    /* Warna gelap (RGBA untuk transparansi) */
+    z-index: 1;
+}
+
+
+
+
 .kotakdaftar1 {
-    margin-left: 120px;
+    margin-left: 100px;
 }
 
 .kotakdaftar2 {
-    margin-right: 120px;
+    margin-right: 100px;
 }
 
 .daftar {
