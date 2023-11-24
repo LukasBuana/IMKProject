@@ -138,6 +138,7 @@ input {
 }
 
 .gambar:hover::before {
+    cursor: pointer;
     content: "";
     position: absolute;
     top: 0;
