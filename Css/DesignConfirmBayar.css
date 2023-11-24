@@ -6,9 +6,12 @@
 
 html,
 body {
-    height: 100%;
-    margin: 0;
-    overflow: hidden;
+  background-color: white;
+  background-image: url('../image/brandon-griggs-wR11KBaB86U-unsplash\(1\).jpg');
+  /* background-image: url('https://images.unsplash.com/photo-1460317442991-0ec209397118?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+        ); */
+
+  
 }
 
 .container {
@@ -248,13 +251,14 @@ input {
 }
 
 .header2 {
-    color: black;
-    font-size: 15px;
-    font-weight: 400;
+    color: rgb(245, 241, 241);
+    font-size: 20px;
+    font-weight: bold;
     position: relative;
     top: 125px;
+
     left: 5%;
-    font-family: Kumar One;
+    font-family :'Times New Roman', Times, serif;
 }
 
 .textbox {
@@ -265,7 +269,7 @@ input {
     padding: 40px;
     width: 85%;
     height: 10%;
-    background: #D9D9D9;
+    background: #a7a8a7;
     border-radius: 20px;
     position: absolute;
     top: 265px;
@@ -281,7 +285,7 @@ input {
     padding: 40px;
     width: 85%;
     height: 10%;
-    background: #D9D9D9;
+    background: #a7a8a7;
     border-radius: 20px;
     position: absolute;
     top: 350px;
@@ -297,7 +301,7 @@ input {
     padding: 40px;
     width: 85%;
     height: 10%;
-    background: #D9D9D9;
+    background: #a7a8a7;
     border-radius: 20px;
     position: absolute;
     top: 435px;
@@ -313,7 +317,7 @@ input {
     padding: 40px;
     width: 85%;
     height: 10%;
-    background: #D9D9D9;
+    background: #a7a8a7;
     border-radius: 20px;
     position: absolute;
     top: 520px;
@@ -345,28 +349,60 @@ input {
 }
 
 .Konfirmasi {
-    position: fixed;
-    bottom: 50px;
-    right: 80px;
+    position: relative;
     background-color: #338D7D;
-    width: 15%;
-    height: 7%;
+    display: inline-block;
+    color: white;
     cursor: pointer;
+    flex-direction: column;
     border: 1px solid #338D7D;
     border-radius: 5px;
-    display: flex;
+    font-weight: bold;
     justify-content: center;
     align-items: center;
     font-size: 35px;
-    margin: 0;
+    margin-top: 80px;
+    margin-left: 1245px;
 }
 
 .gambarfile img {
     max-height: 30px;
-    position: absolute;
-    margin-left: 200px;
-    bottom: 170px;
-    right: 170px;
+    position: relative;
+    margin-top: 435px;
+    margin-left: 1320px;
+  
+}
+
+@media screen and (max-width: 585px) {
+    .textbox{
+        margin-top: 170px;
+    }
+    .textbox2{
+        margin-top: 165px;
+    }
+    .textbox3{
+        margin-top: 160px;
+    }
+    .textbox4{
+        margin-top: 155px;
+    }
+    .Konfirmasi{
+        margin-top: 70px;
+        margin-left: 280px;
+        margin-bottom: 50px;
+    }
+    .gambarfile img {
+        margin-top: 415px;
+        margin-left: 380px;
+    }
+    .header2{
+        width: 450px;
+        text-align: justify;
+    }
+
+    
+   
+
 }
 
 

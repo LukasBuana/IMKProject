@@ -6,9 +6,9 @@
 
 html,
 body {
-    height: 100%;
-    margin: 0;
-    overflow: hidden;
+    background-color: white;
+    background-image: url('../image/brandon-griggs-wR11KBaB86U-unsplash\(1\).jpg');
+
 }
 
 .container {
@@ -34,8 +34,6 @@ header {
     z-index: 1;
 
 }
-
-
 
 header ul {
     position: relative;
@@ -115,6 +113,7 @@ input {
     html,
     body {
         height: 100%;
+        
         margin: 0;
     }
 
@@ -247,7 +246,7 @@ input {
     font-family: Kumar One;
 }
 .h2 {
-    color: #0e0b0b;
+    color: #f0f0f0;
     font-size: 30px;
     font-weight: 400;
     position: relative;
@@ -265,13 +264,14 @@ input {
     padding: 40px;
     width: 84%;
     height: 52%;
-    background: #D9D9D9;
+    background: #524f4f;
     border-radius: 10px;
     position: absolute;
-    top: 300px;
+    top: 0px;
     left: 5%;
     padding: 20px;
     overflow:auto;
+    margin-top: 300px;
 }
 
 .textbox-in::-webkit-scrollbar {
@@ -294,7 +294,7 @@ input {
     background: #D9D9D9;
     width: 90%;
     height: 80%;
-    position: absolute;
+    position: relative;
     top: 10%;
     left: 5%;
 }
@@ -321,8 +321,10 @@ input {
     display: none;
  }
  .select {
+    
     position: relative;
     display: flex;
+    flex-direction: column;
     width: 20em;
     height: 3em;
     line-height: 3;
@@ -330,7 +332,9 @@ input {
     overflow: hidden;
     border-radius: .25em;
     margin-top: 125px;
-    margin-left: 5%;
+    margin-left: 78px;
+    margin-bottom: 10px;
+    margin-right: 0px;
  }
 
  .select::after {
@@ -371,14 +375,18 @@ input {
  .select2 {
     position: relative;
     display: flex;
+    flex-direction: column;
     width: 20em;
     height: 3em;
     line-height: 3;
     background: #5c6664;
     overflow: hidden;
     border-radius: .25em;
-    margin-top: -47.9px;
-    margin-left: 26.5%;
+   
+    margin-left: 420px;
+    margin-top: -57.8px;
+    margin-bottom: 0px;
+    margin-right: 40px;
  }
 
  .select2::after {
@@ -428,6 +436,33 @@ input {
     background-color: #ffffa2;
     border-color: #ffff0f;
     transition: all .2s;
+
+}
+
+@media screen and (max-width: 585px) {
+    .select2 {
+        width: auto; 
+        margin-left: 25px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-right: 40px;
+    }
+    .select {
+        width: auto;
+        margin-left: 25px;
+        margin-top: 125px;
+        margin-bottom: 10px;
+        margin-right: 40px;
+    }
+    .textbox{
+        width: 88%;
+        margin-left: 0px;
+        margin-top: 380px;
+        margin-bottom: 10px;
+        margin-right: 0px;
+
+    }
+   
 
 }
 
