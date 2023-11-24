@@ -40,9 +40,13 @@
                             <input type="checkbox" id="btn3">
 
                             <ul>
-                                <li><a href="LaporanKeuangan.html">Laporan Keuangan</a></li>
-                                <li><a href="HistoriKeuangan.html">Histori Keuangan</a></li>
-                                <li><a href="KinerjaProperti.html">Kinerja Properti</a></li>
+                                <li><a href="LaporanKeuangan.html" onclick="return checkAccess()">Laporan Keuangan</a>
+                                </li>
+                                <li><a href="HistoriKeuangan.html" onclick="return checkAccess()">Histori Keuangan</a>
+
+                                </li>
+                                <li><a href="KinerjaProperti.html" onclick="return checkAccess()">Kinerja Properti</a>
+                                </li>
                             </ul>
                         </li>
                     </ul>
@@ -63,6 +67,17 @@
         let header = document.querySelector('header')
         menutoggle.onclick = function () {
             header.classList.toggle('active')
+        }
+
+
+        function checkAccess() {
+            var userEmail = prompt('Masukkan kata sandi Admin:'); // Ganti ini dengan metode autentikasi yang lebih aman
+            if (userEmail === 'jaya999') {
+                return true; // Izinkan akses jika email adalah admin
+            } else {
+                alert('Anda tidak memiliki izin untuk mengakses halaman ini.');
+                return false; // Batalkan akses jika bukan admin
+            }
         }
     </script>
     <div class="container">
