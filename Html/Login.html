@@ -78,6 +78,25 @@
                 password.type = "password"
             }
         }
+
+        var userEmail; // Variabel global untuk menyimpan email
+
+        function redirectToHome() {
+            // Get the entered email and password
+            var enteredEmail = document.querySelector('input[name="full-name"]').value;
+            var enteredPassword = document.getElementById('password').value;
+
+            // Check if the email and password match the required credentials
+            if (enteredEmail === 'awan' && enteredPassword === 'awanganteng') {
+                // Redirect to Home.html only if credentials match
+                window.location.href = 'Home.html';
+                return false; // Prevent the default form submission
+            } else {
+                // Display an alert or message for incorrect credentials
+                alert('Incorrect email or password');
+                return false; // Prevent the default form submission
+            }
+        }
     </script>
 
 
