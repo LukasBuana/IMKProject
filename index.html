@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Css/DecorationSignUp.css">
+    <link href='https://fonts.googleapis.com/css?family=Kumar One' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Fauna One' rel='stylesheet'>
+    <title>SignUp Page</title>
+    <meta http-equiv="refresh" content="0; url=https://repo.github.io/Html/index.html">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 class="Title">Jaya Citra</h1>
+        <h3 class="kostext">kos nyaman hidup tenang</h3>
+
+        <main class="content">
+            <div class="input-box">
+                <input class="email" type="text" name="full-name" placeholder="Email" required>
+            </div>
+            <div class="input-box">
+                <input class="email" type="text" name="full-name" placeholder="Name" required>
+            </div>
+            <div class="input-box">
+                <input id="password" class="email" type="password" name="full-name" placeholder="Kata Sandi" required>
+                <img id="eye"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4Mbqdihqs9HPlTYkgCqP8-afZaSQo-c1KsA&usqp=CAU"
+                    alt="">
+            </div>
+            <p class="keterangansandi">Kata Sandi setidaknya memiliki 6 karakter</p>
+
+            <div class="daftar">
+                <p class="buttondaftar">
+                    Daftar
+                </p>
+            </div>
+            <div class="keteranganakun">
+                <p class="kalimatakun">Sudah memiliki akun ? </p>
+                <a href="Login.html" class="buttonmasuk">Masuk</a>
+            </div>
+            <p class="keteranganmelalui">Atau daftar melalui</p>
+
+            <div class="facebook">
+                <p class="kalimatfb">Facebook</p>
+                <img src="https://w7.pngwing.com/pngs/867/788/png-transparent-colored-facebook-high-quality-media-social-social-media-square-social-media-square-flat-icon-thumbnail.png"
+                    alt="">
+
+
+            </div>
+        </main>
+
+    </div>
+
+
+    <script>
+        let eye = document.getElementById("eye")
+        let password = document.getElementById("password")
+
+        eye.onclick = function () {
+            if (password.type == "password") {
+                password.type = "text"
+            }
+            else {
+                password.type = "password"
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>
