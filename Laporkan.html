@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Konfirmasi Pembayaran</title>
-    <link rel="stylesheet" href="../Css/DesignConfirmBayar.css">
+    <title>Laporkan</title>
+    <link rel="stylesheet" href="../Css/Laporkan.css">
     <link href='https://fonts.googleapis.com/css?family=Kumar One' rel='stylesheet'>
 </head>
 
@@ -56,7 +56,7 @@
 
 
         </nav>
-        <div class="logout" onclick="window.location.href='SignUp.html'">
+        <div class="logout" onclick="window.location.href='index.html'">
             <img src="https://cdn-icons-png.flaticon.com/512/4263/4263209.png" alt="">
         </div>
 
@@ -68,7 +68,12 @@
         menutoggle.onclick = function () {
             header.classList.toggle('active')
         }
-
+        function resetFields() {
+            document.getElementById("judul").value = ""
+            document.getElementById("textarea").value = "";
+            document.getElementById('radio').reset();
+            alert('Laporan Terkirim')
+        }
         function checkAccess() {
             var userEmail = prompt('Masukkan kata sandi Admin:'); // Ganti ini dengan metode autentikasi yang lebih aman
             if (userEmail === 'jaya999') {
@@ -80,52 +85,22 @@
         }
     </script>
     <div class="container">
-
-        <h1 class="header1">Konfirmasi Pembayaran</h1>
-        <h2 class="header2">Terima kasih sudah memesan kos di Jaya Citra. Setelah melakukan pembayaran, segera lakukan
-            konfirmasi pembayaran
-            dengan mengisi form di bawah,<br> paling lambat 1x24 jam setelah pemesanan. Pembayaran dapat dilakukan
-            dengan transfer ke bank BCA
-            (0842789188) atas nama Jaya Winata.
-        </h2>
-        <div class="textbox">
-            <div class="input-box">
-                <input class="email" type="text" name="full-name" placeholder="Nama">
-            </div>
+        <h1>Laporkan</h1><br>
+        <div class="form">
+            <p>Pilih Klasifikasi Laporan</p>
+            <form id="radio"> <input type="radio" name="tes" id="Kekerasan">
+                <label for="Kekerasan">Kekerasan</label>
+                <input type="radio" name="tes" id="Kehilangan">
+                <label for="Kehilangan">Kehilangan</label>
+                <input type="radio" name="tes" id="Ketidaknyamanan">
+                <label for="Ketidaknyamanan">Ketidaknyamanan</label>
+            </form>
+            <br><br>
+            <input type="text" name="judul" id="judul" placeholder="Ketik judul laporan anda*"><br><br>
+            <textarea rows="10" cols="10" placeholder="Ketik isi laporan anda*" id="textarea"></textarea><br><br>
+            <button type="button" onclick="resetFields()">Kirim Laporan</button>
         </div>
-        <div class="textbox2">
-            <div class="input-box">
-                <input class="email" type="text" name="full-name" placeholder="Nomor Bukti Pembayaran">
-            </div>
-        </div>
-        <div class="textbox3">
-            <div class="input-box">
-                <input class="email" type="text" name="full-name" placeholder="Email">
-            </div>
-        </div>
-        <div class="textbox4">
-            <div class="input-box">
-                <input class="email" type="text" name="full-name" placeholder="File Bukti Pembayaran">
-
-
-            </div>
-        </div>
-        <div class="gambarfile">
-            <img src="../image/folder.png" alt="">
-
-
-        </div>
-
-
-        <div class="Konfirmasi">
-            <p class="buttonconf">
-                Konfirmasi
-            </p>
-        </div>
-
-
     </div>
-
 </body>
 
 </html>

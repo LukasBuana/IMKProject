@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Laporkan</title>
-    <link rel="stylesheet" href="../Css/Laporkan.css">
+    <link rel="stylesheet" href="../Css/KinerjaProperti.css">
     <link href='https://fonts.googleapis.com/css?family=Kumar One' rel='stylesheet'>
+    <title>Kinerja Properti</title>
 </head>
 
 <body>
@@ -45,7 +45,7 @@
                                 <li><a href="HistoriKeuangan.html" onclick="return checkAccess()">Histori Keuangan</a>
 
                                 </li>
-                                <li><a href="KinerjaProperti.html" onclick="return checkAccess()">Kinerja Properti</a>
+                                <li><a href="KinerjaProperti.html">Kinerja Properti</a>
                                 </li>
                             </ul>
                         </li>
@@ -56,11 +56,9 @@
 
 
         </nav>
-        <div class="logout" onclick="window.location.href='SignUp.html'">
+        <div class="logout" onclick="window.location.href='index.html'">
             <img src="https://cdn-icons-png.flaticon.com/512/4263/4263209.png" alt="">
         </div>
-
-
     </header>
     <script>
         let menutoggle = document.querySelector('.menutoggle');
@@ -68,12 +66,7 @@
         menutoggle.onclick = function () {
             header.classList.toggle('active')
         }
-        function resetFields() {
-            document.getElementById("judul").value = ""
-            document.getElementById("textarea").value = "";
-            document.getElementById('radio').reset();
-            alert('Laporan Terkirim')
-        }
+
         function checkAccess() {
             var userEmail = prompt('Masukkan kata sandi Admin:'); // Ganti ini dengan metode autentikasi yang lebih aman
             if (userEmail === 'jaya999') {
@@ -85,20 +78,32 @@
         }
     </script>
     <div class="container">
-        <h1>Laporkan</h1><br>
-        <div class="form">
-            <p>Pilih Klasifikasi Laporan</p>
-            <form id="radio"> <input type="radio" name="tes" id="Kekerasan">
-                <label for="Kekerasan">Kekerasan</label>
-                <input type="radio" name="tes" id="Kehilangan">
-                <label for="Kehilangan">Kehilangan</label>
-                <input type="radio" name="tes" id="Ketidaknyamanan">
-                <label for="Ketidaknyamanan">Ketidaknyamanan</label>
-            </form>
-            <br><br>
-            <input type="text" name="judul" id="judul" placeholder="Ketik judul laporan anda*"><br><br>
-            <textarea rows="10" cols="10" placeholder="Ketik isi laporan anda*" id="textarea"></textarea><br><br>
-            <button type="button" onclick="resetFields()">Kirim Laporan</button>
+        <h1>Kinerja Properti</h1>
+        <div class="box">
+            <h1>Kamar Terisi</h1>
+            <p>22/24</p>
+            <h1>Biaya Perbaikan</h1>
+            <p>2.800.000</p>
+            <h1>Kerusakan Fasilitas</h1>
+            <div class="scrollable">
+                <h3>Kamar A3</h3>
+                <p>Tembok Lembab</p>
+                <h3>Kamar B1</h3>
+                <p>Cermin Pecah</p>
+                <h3>Kamar A2</h3>
+                <p>Tirai Lepas</p>
+            </div>
+            <h1>Pelanggan Belum Bayar</h1>
+            <div class="scrollable">
+                <h3>Kamar A5</h3>
+                <p>Doni Sucipto</p>
+                <h3>Kamar B5</h3>
+                <p>Edi Rahmat</p>
+                <h3>Kamar C1</h3>
+                <p>Hadi Gunawan</p>
+                <h3>Kamar C5</h3>
+                <p>Lukman Antono</p>
+            </div>
         </div>
     </div>
 </body>

@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Css/KinerjaProperti.css">
+    <title>Konfirmasi Pembayaran</title>
+    <link rel="stylesheet" href="../Css/DesignConfirmBayar.css">
     <link href='https://fonts.googleapis.com/css?family=Kumar One' rel='stylesheet'>
-    <title>Kinerja Properti</title>
 </head>
 
 <body>
@@ -45,7 +45,7 @@
                                 <li><a href="HistoriKeuangan.html" onclick="return checkAccess()">Histori Keuangan</a>
 
                                 </li>
-                                <li><a href="KinerjaProperti.html">Kinerja Properti</a>
+                                <li><a href="KinerjaProperti.html" onclick="return checkAccess()">Kinerja Properti</a>
                                 </li>
                             </ul>
                         </li>
@@ -56,9 +56,11 @@
 
 
         </nav>
-        <div class="logout" onclick="window.location.href='SignUp.html'">
+        <div class="logout" onclick="window.location.href='index.html'">
             <img src="https://cdn-icons-png.flaticon.com/512/4263/4263209.png" alt="">
         </div>
+
+
     </header>
     <script>
         let menutoggle = document.querySelector('.menutoggle');
@@ -78,34 +80,52 @@
         }
     </script>
     <div class="container">
-        <h1>Kinerja Properti</h1>
-        <div class="box">
-            <h1>Kamar Terisi</h1>
-            <p>22/24</p>
-            <h1>Biaya Perbaikan</h1>
-            <p>2.800.000</p>
-            <h1>Kerusakan Fasilitas</h1>
-            <div class="scrollable">
-                <h3>Kamar A3</h3>
-                <p>Tembok Lembab</p>
-                <h3>Kamar B1</h3>
-                <p>Cermin Pecah</p>
-                <h3>Kamar A2</h3>
-                <p>Tirai Lepas</p>
-            </div>
-            <h1>Pelanggan Belum Bayar</h1>
-            <div class="scrollable">
-                <h3>Kamar A5</h3>
-                <p>Doni Sucipto</p>
-                <h3>Kamar B5</h3>
-                <p>Edi Rahmat</p>
-                <h3>Kamar C1</h3>
-                <p>Hadi Gunawan</p>
-                <h3>Kamar C5</h3>
-                <p>Lukman Antono</p>
+
+        <h1 class="header1">Konfirmasi Pembayaran</h1>
+        <h2 class="header2">Terima kasih sudah memesan kos di Jaya Citra. Setelah melakukan pembayaran, segera lakukan
+            konfirmasi pembayaran
+            dengan mengisi form di bawah,<br> paling lambat 1x24 jam setelah pemesanan. Pembayaran dapat dilakukan
+            dengan transfer ke bank BCA
+            (0842789188) atas nama Jaya Winata.
+        </h2>
+        <div class="textbox">
+            <div class="input-box">
+                <input class="email" type="text" name="full-name" placeholder="Nama">
             </div>
         </div>
+        <div class="textbox2">
+            <div class="input-box">
+                <input class="email" type="text" name="full-name" placeholder="Nomor Bukti Pembayaran">
+            </div>
+        </div>
+        <div class="textbox3">
+            <div class="input-box">
+                <input class="email" type="text" name="full-name" placeholder="Email">
+            </div>
+        </div>
+        <div class="textbox4">
+            <div class="input-box">
+                <input class="email" type="text" name="full-name" placeholder="File Bukti Pembayaran">
+
+
+            </div>
+        </div>
+        <div class="gambarfile">
+            <img src="../image/folder.png" alt="">
+
+
+        </div>
+
+
+        <div class="Konfirmasi">
+            <p class="buttonconf">
+                Konfirmasi
+            </p>
+        </div>
+
+
     </div>
+
 </body>
 
 </html>
